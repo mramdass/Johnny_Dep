@@ -31,8 +31,6 @@ def get_requirements(package):
     for line in output_lines:
         if 'Requires: ' in line:
             return line.strip('Requires:').split(', ')
-    
-    return []
 
 def johnny_dep(package):
     if not package:
