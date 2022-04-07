@@ -43,7 +43,7 @@ def johnny_dep(package):
 
 '''
     This function call was purposely left out of the Python __main__ block
-    for deliterate recursive confusion when importing this file. Ideally
+    for deliberate recursive confusion when importing this file. Ideally
     it should be called in a block like this:
 
     if __name__=='__main__':
