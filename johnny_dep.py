@@ -53,13 +53,11 @@ def johnny_seq(package):
         packages += get_requirements(next_package)
 
 def pip_dep(package, dependencies):
-    if not package:
+    if not package or package in dependencies:
         return
     
     dependencies[package] = get_requirements(package)
     for requirement in dependencies[package]:
-        if requirement in dependencies:
-            continue
         pip_dep(requirement, dependencies)
 
 def pip_seq(package, dependencies={}):
