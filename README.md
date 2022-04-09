@@ -1,7 +1,7 @@
 # Johnny_Dep
 Shows the dependency tree for a package using default Python setup.  
   
-This script was made to demonstrate to a friend, Johnathan, how to obtain a pip dependency tree for a given package recursively by using Python default setup (libraries and pip installation).  
+This script was made to demonstrate to a friend, Johnathan, how to obtain a pip dependency tree for a given package recursively by using Python default setup (libraries and pip installation). [pipdeptree](https://pypi.org/project/pipdeptree/) should be used for practical use.  
   
 This script requires the package to first be installed via pip. I.e.:
 ```
